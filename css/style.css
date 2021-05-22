@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: .3s ease-in-out;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.search-button {
+    border: none;
+    color: #7a7a7a;
+    font-size: 14px;
+    z-index: 2;
+}
+
+.fas {
+    color: #7a7a7a;
+}
+
+form.search-bar {
+    display: none;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.search-input {
+    color: #7a7a7a;
+    font-size: 14px;   
+    background-color: #f2f2f2;
+    border-radius: 21px;
+    padding: 5px 50px;
+    margin-left: -30px;
+    border: none;
+}
+
+
+
+.hero {
+    background-image: url('../images/computer.png');
+    background-attachment: fixed;
+    min-height: 35vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0;
+    background-size: contain;
+    /* background-position: center; */
+}
+
+.wrapper {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.wrapper > .container {
+    min-height: 35vh;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.hero-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.hero-bottom > h1 {
+    margin: 5px
+}
+
+.hero-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-top > button {
+    background: transparent;
+    border: white solid 1px;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}
+
+.hero-top > botton:hover {
+    background-color:rgba(252, 252, 252, 0.8)
+}
+
+.card {
+    margin: 15px;
+}
+
+.join, .dropdown-toggle {
+    display: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-toggle {
+    color: black;
+}
+
+.join {
+    color: white;
+}
+
+.author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body {
+    padding: .5rem 1rem;
+}
+
+.author > div {
+    display: flex;
+}
+
+.author img {
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.card-body.special > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.special > button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: black solid 1px;
+    background-color: white;
+}
+
+.author > button {
+    border: none;
+    padding: 5px;
+    background-color: #EDEEF0;
+}
+
+.d-lg-block, .d-lg-flex {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        background-size: cover;
+        background-position-y: center;
+    }
+}
